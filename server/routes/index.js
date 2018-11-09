@@ -11,15 +11,19 @@ router.get('/', (req, res, next) => {
   });
 
 router.get('/api/v1/spacecats/results', (req, res, next) => {
-    fetch(`http://api.petfinder.com/pet.find?key=${process.env.PETFINDER_API}&location=Minnesota&format=json`)
-    .then(function(response) {
-        console.log(response);
-        res.send(response);
-        //return response.json();
-    })
-    .catch(function(error) {
-        res.send(error);
-    })
+    const url = `http://api.petfinder.com/pet.find?key=${process.env.PETFINDER_API}&location=Minnesota&format=json`;
+
+    const getData = async url => {
+      try {
+        const response = await fetch(url);
+        const json = await response.json();
+        res.send(json)
+      } catch (error) {
+        // send error here
+      }
+    };
+
+    getData(url);
 });
 
 
