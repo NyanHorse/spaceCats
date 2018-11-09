@@ -3,15 +3,14 @@
 Welcome to the most amazing, spectacular and interstellar adoption web in the whole galaxy! In this web you will be able to adopt an Space Cat (normal cats not allowed) based in your personality.
 10.. 9.. 8.. 7.. 6.. 5.. 4.. 3.. 2.. 1.. Let's go!
 
-createdb etgsfaf
-node server/models/databse.js
-
-Setupppp
 
 ## Setup
-
 Run `yarn` to install packages.
 Run `yarn start` to run the development server.
+
+### Database Prep
+Type `createdb spacecats` to create a database in PostgreSQL.
+Run `node server/models/database.js` to create the table structure.
 
 ## Basic Requirements
 

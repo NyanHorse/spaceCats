@@ -1,7 +1,7 @@
 import React from "react"; //importing the library
 import ReactDOM from "react-dom"; //importing dom specific methods
 import Main from "./components/main"; //conecting with main
-//require("./style.css");
+require('dotenv').config();
 
 class App extends React.Component { //class App inherits from react
   render() { //Render a React element into the DOM
