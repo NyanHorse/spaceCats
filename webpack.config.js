@@ -1,7 +1,10 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
-  module: {
-    rules: [
+  node: {
+    fs: "empty"
+  },
+  module: {    
+    rules: [      
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,

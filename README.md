@@ -11,6 +11,7 @@ Run `yarn start` to run the development server.
 ### Database Prep
 Type `createdb spacecats` to create a database in PostgreSQL.
 Run `node server/models/database.js` to create the table structure.
+Run `node server/models/data.js` to fill the tables.
 
 ## Basic Requirements
 

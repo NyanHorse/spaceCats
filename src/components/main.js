@@ -2,7 +2,6 @@ import React from "react";
 import TestView from "./testView";
 
 
-
 class Main extends React.Component { //class Main inherits from react
   constructor(props) {
     super(props); //inherits properties
@@ -11,9 +10,6 @@ class Main extends React.Component { //class Main inherits from react
 
   goTest() {
       this.setState({test: true});
-  }
-
-  changeUser(view) { 
   }
 
   render() {
