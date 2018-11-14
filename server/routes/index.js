@@ -36,7 +36,7 @@ router.get('/api/v1/spacecats/results', (req, res, next) => {
       if (results.error) {
         res.status(404).send({error: results.error})
       } else {
-        const url = `http://api.petfinder.com/pet.find?key=${process.env.PETFINDER_API}&location=New York&breed=${results.data[0].name}&count=4&format=json`;
+        const url = `http://api.petfinder.com/pet.find?key=${process.env.PETFINDER_API}&location=New York&breed=${results.data[0].name}&count=6&format=json`;
         getData(url);
       }
     })    

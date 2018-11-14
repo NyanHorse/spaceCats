@@ -1,4 +1,5 @@
 import React from "react";
+//import styles from './styles.css';
 
 class CatsView extends React.Component { 
     constructor(props) {
@@ -29,7 +30,7 @@ class CatsView extends React.Component {
       let gats = this.state.cats;
       let catPhotos = [];
       for(let key in gats) {
-      catPhotos.push(<img key={key} className="catPic" src={gats[key].media.photos.photo[3].$t} />) 
+      catPhotos.push(<img key={key} src={gats[key].media.photos.photo[3].$t} />) 
       }
     
       return(

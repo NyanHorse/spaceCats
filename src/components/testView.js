@@ -37,7 +37,6 @@ class TestView extends React.Component {
       }
     }).then(res => res.json()) 
     .then(json => { 
-      console.log(json);
       this.setState({
         showCats: true,
         id: json.body[0].id
@@ -60,35 +59,35 @@ class TestView extends React.Component {
       <div>
         <h1>Test</h1>
 
-        <p>Question1 - Independent</p>
+        <p>What type of relationship am I looking for?</p>
         <form>
           <select name="q1" value={this.state.q1} onChange={(e) => this.handleChange(e)}>
-            <option value="T">Answer1</option>
-            <option value="F">Answer2</option>
+            <option value="T">Sometimes I need some company but sometimes I like beeing on my own.</option>
+            <option value="F">I prefer sickness relationships, why going to the bathroom alone if I can have company?</option>
           </select>
         </form>
 
-            <p>Question2 -Active</p>
+            <p>I need action, so my parthner must have a lot of energy to spend with me.</p>
         <form>
           <select name="q2" value={this.state.q2} onChange={(e) => this.handleChange(e)}>
-            <option value="T">Answer1</option>
-            <option value="F">Answer2</option>
+            <option value="T">Of course! I can spend hours playing!</option>
+            <option value="F">Not really, I prefer some company while lying on my couch.</option>
           </select>
         </form>
 
-            <p>Question3 - Friendly</p>
+            <p>I am super socible, so I expect my parthner to like having visits.</p>
         <form>
           <select name="q3" value={this.state.q3} onChange={(e) => this.handleChange(e)}>
-            <option value="T">Answer1</option>
-            <option value="F">Answer2</option>
+            <option value="T">Absolutely!</option>
+            <option value="F">Meh.. I am more a lonely person.</option>
           </select>
         </form>
 
-            <p>Question - Lovely</p>
+            <p>I like romance, but I prefer not beeing kissed all the time.</p>
         <form>
           <select name="q4" value={this.state.q4} onChange={(e) => this.handleChange(e)}>
-            <option value="T">Answer1</option>
-            <option value="F">Answer2</option>
+            <option value="T">No! I am a love machine and I need love all day long!</option>
+            <option value="F">Exactly, I like kisses, but I need my own space.</option>
           </select>
         </form>
       
